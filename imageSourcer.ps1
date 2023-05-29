@@ -27,7 +27,7 @@ $response = Invoke-RestMethod -Uri $endpoint -Headers $headers
 $imageUrl = $response.urls.raw # raw, full, regular, small, thumb (raw is the highest quality)
 
 # download the image using the URL
-$outputPath = "C:\Users\User\Folder\image.jpg" # change this to your desired output path
+$outputPath = "C:\Users\User\Folder\image.png" # change this to your desired output path
 Invoke-WebRequest -Uri $imageUrl -OutFile $outputPath
 
 # set the downloaded image as the wallpaper for the home screen
