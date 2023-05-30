@@ -14,12 +14,6 @@ $headers = @{
     "Authorization" = "Client-ID $accessKey"
 }
 
-# create query parameters
-$queryParams = @{
-    "query" = $query
-    "orientation" = $orientation
-}
-
 # make a GET request to the API endpoint
 $response = Invoke-RestMethod -Uri $endpoint -Headers $headers
 
